@@ -139,7 +139,7 @@ spyder==4.0.1
 spyder-kernels==1.8.1
 spyder-terminal==0.2.4
 tensorboard==1.15.0
-tensorflow==1.15.0
+tensorflow==1.15.2
 tensorflow-estimator==1.15.1
 tensorflow-gpu==1.15.2
 tensorflow-probability==0.7.0
