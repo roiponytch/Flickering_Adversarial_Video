@@ -3,7 +3,7 @@
 *.weights
 *.h5
 
-
+*.pyc
 data/checkpoints/rgb_imagenet/*
 data/videos_for_tests/all_npy/*
 data/videos_for_tests/npy/*
