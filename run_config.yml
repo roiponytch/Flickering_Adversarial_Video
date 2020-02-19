@@ -1,0 +1,76 @@
+
+DATA:
+    LABEL_MAP_PATH: 'data/label_map.txt'
+
+MODEL:
+    CKPT_PATH: 'data/checkpoints/rgb_imagenet/model.ckpt'
+    
+
+SINGLE_VIDEO_ATTACK:
+
+    TARGETED_ATTACK: False
+    TARGETED_CLASS: 'javelin throw'
+    IMPROVE_ADV_LOSS: True
+    PROB_MARGIN: 0.05
+    USE_LOGITS: False # True - in targeted
+    MAX_NUM_STEP: 500
+    
+    LAMBDA: 1.0
+    BETA_1: 0.5
+    BETA_2: 0.5
+    BATCH_SIZE: 1
+    
+    CYCLIC_ATTACK: False
+    
+    PKL_RESULT_PATH: 'result/videos_for_tests/npy/'
+    NPY_PATH: 'data/videos_for_tests/npy/'
+    
+    TF_RECORDS_TRAIN_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
+    TF_RECORDS_VAL_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
+
+CLASS_GEN_ATTACK:
+
+    TARGETED_ATTACK: False
+    TARGETED_CLASS: 'javelin throw'
+    IMPROVE_ADV_LOSS: True
+    PROB_MARGIN: 0.05
+    USE_LOGITS: False
+    MAX_NUM_STEP: 10000
+    
+    LAMBDA: 10.0
+    BETA_1: 0.5
+    BETA_2: 0.5
+    BATCH_SIZE: 8
+    
+    CYCLIC_ATTACK: False
+    
+    PKL_RESULT_PATH: 'result/generalization/model_gen_one_class/'
+    NPY_PATH: 'data/videos_for_tests/npy/'
+    
+    TF_RECORDS_TRAIN_PATH: '/data/Kinetics/database/tfrecord_uint8/train/triple jump/'
+    TF_RECORDS_VAL_PATH: '/data/Kinetics/database/tfrecord_uint8/val/triple jump/'
+    
+    
+UNIVERSAL_ATTACK:
+
+    TARGETED_ATTACK: False
+    TARGETED_CLASS: 'javelin throw'
+    IMPROVE_ADV_LOSS: False #False- cross entropy loss
+    PROB_MARGIN: 0.05
+    USE_LOGITS: False
+    MAX_NUM_STEP: 10000
+    
+    LAMBDA: 10.0 #100.0 - for targeted
+    BETA_1: 0.5
+    BETA_2: 0.5
+    BATCH_SIZE: 8
+    
+    CYCLIC_ATTACK: False
+    
+    PKL_RESULT_PATH: 'result/generalization/model_gen_untargeted_ce_loss_reg/'
+    NPY_PATH: 'data/videos_for_tests/npy/'
+    
+    TF_RECORDS_TRAIN_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
+    TF_RECORDS_VAL_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
+
+
