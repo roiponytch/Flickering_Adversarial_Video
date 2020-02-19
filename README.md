@@ -34,7 +34,4 @@ And for the GPU to work, make sure you've got the drivers installed beforehand (
 
 It has been tested to work with Python 3.5.2.
 
-
 Download and merge the following diractory to project dir https://www.dropbox.com/sh/ilbsy3bwk5k5tn4/AADxk11U_EDalu467igLfX2wa?dl=0.
-The 
-Get the pre-trained checkpoint using rgb inputs and trained on Kinetics-400 from
