@@ -26,8 +26,8 @@ SINGLE_VIDEO_ATTACK:
     PKL_RESULT_PATH: 'result/videos_for_tests/npy/'
     NPY_PATH: 'data/videos_for_tests/npy/'
     
-    TF_RECORDS_TRAIN_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
-    TF_RECORDS_VAL_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
+    TF_RECORDS_TRAIN_PATH: 'data/kinetics/database/tfrecord_uint8/val/'
+    TF_RECORDS_VAL_PATH: 'data/kinetics/database/tfrecord_uint8/val/'
 
 CLASS_GEN_ATTACK:
 
@@ -48,14 +48,14 @@ CLASS_GEN_ATTACK:
     PKL_RESULT_PATH: 'result/generalization/model_gen_one_class/'
     NPY_PATH: 'data/videos_for_tests/npy/'
     
-    TF_RECORDS_TRAIN_PATH: '/data/Kinetics/database/tfrecord_uint8/train/triple jump/'
-    TF_RECORDS_VAL_PATH: '/data/Kinetics/database/tfrecord_uint8/val/triple jump/'
+    TF_RECORDS_TRAIN_PATH: 'data/kinetics/database/tfrecord_uint8/train/triple jump/'
+    TF_RECORDS_VAL_PATH: 'data/kinetics/database/tfrecord_uint8/val/triple jump/'
     
     
 UNIVERSAL_ATTACK:
 
     TARGETED_ATTACK: False
-    TARGETED_CLASS: 'javelin throw'
+    TARGETED_CLASS: 'welding'
     IMPROVE_ADV_LOSS: False 
     PROB_MARGIN: 0.05
     USE_LOGITS: False
@@ -71,7 +71,7 @@ UNIVERSAL_ATTACK:
     PKL_RESULT_PATH: 'result/generalization/model_gen_untargeted_ce_loss_reg/'
     NPY_PATH: 'data/videos_for_tests/npy/'
     
-    TF_RECORDS_TRAIN_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
-    TF_RECORDS_VAL_PATH: '/data/Kinetics/database/tfrecord_uint8/val/'
+    TF_RECORDS_TRAIN_PATH: 'data/kinetics/database/tfrecord_uint8/val/'
+    TF_RECORDS_VAL_PATH: 'data/kinetics/database/tfrecord_uint8/val/'
 
 
