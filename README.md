@@ -68,7 +68,7 @@ The result file (`.pkl`) will be save according to `PKL_RESULT_PATH` field in `r
 
 We provide example of `.pkl`:
 ```
-Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result/videos_for_tests/npy/bartending_beta1_0.1_th_1.67%_rg_1.19%.pkl.pkl
+Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result/videos_for_tests/npy/bartending_beta1_0.1_th_1.67%_rg_1.19%.pkl
 ```
 
 ### Single Class Generalization Attack
