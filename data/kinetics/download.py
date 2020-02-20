@@ -107,10 +107,10 @@ def download_clip(video_identifier, output_filename,
                '-t', str(end_time - start_time),
                '-i', "'%s'" % direct_download_url,
                '-c:v', 'libx264', '-preset', 'ultrafast',
-               '-c:a', 'aac',
-               '-strict' ,'-2',
+               '-strict','-2',# '-na',
+               '-vf','"scale=256:256:force_original_aspect_ratio=increase,crop=224:224"',
                '-threads', '1',
-               '-loglevel', 'panic',
+               '-loglevel', 'info','-y',
                '"%s"' % output_filename]
     command = ' '.join(command)
     # print(command)

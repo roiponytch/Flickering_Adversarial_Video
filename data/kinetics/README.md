@@ -14,6 +14,6 @@ python download.py {dataset_split}.csv <data_dir> -n <num-jobs>
 ```
 for example:
 ```
-mkdir database/test/
-python download.py 'data/kinetics-400_test.csv' 'database/test/' -n 32
+mkdir database/val/
+python download.py 'data/kinetics-400_val.csv' 'database/test/' -n 32
 ```
