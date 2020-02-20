@@ -62,13 +62,15 @@ Patternless_Adversarial_Video$ python adversarial_main_single_video_npy.py
 ```
 
 - Visualize the adversarial video and perturbation
-The result file (`.pkl`) will be save according to `PKL_RESULT_PATH` field in `run_config.yml`
-for example:
+
+The result file (`.pkl`) will be save according to `PKL_RESULT_PATH` field in `run_config.yml`.
+
+for example (We provide example of `.pkl`):
 ```
 Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result/videos_for_tests/npy/bartending_beta1_0.1_th_1.67%_rg_1.19%.pkl.pkl
 ```
 
 ### Single Class Generalization Attack
 
-Download kinetics databse according to [Training Models](data/kinetics/README.md)
+Download kinetics databse according to [Kinetics-Downloader](data/kinetics/README.md)
 
