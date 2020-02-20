@@ -8,8 +8,7 @@ We encourage the readers to view the adversarial videos in the following:
 
 
 ## Overview
-<img src="bartending_beta1_0.1_th_1.67__rg_1.19.gif" width="400" height="790">
-
+<img src="bartending_beta1_0.1_th_1.67__rg_1.19.gif" height="50%" width="50%">
 
 Our threat model follows the white-box setting. In the experiments,
 video recognition model [I3D](https://arxiv.org/abs/1705.07750) is used as target model,
