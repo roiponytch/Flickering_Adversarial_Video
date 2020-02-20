@@ -77,7 +77,7 @@ Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result
 - Convert the downloaded data to `.tfrecord`:
 
 ```
- python kinetics_to_tf_record_uint8.py.py <data_dir> class <tfrecord_data_dir> 
+ python kinetics_to_tf_record_uint8.py <data_dir> class <tfrecord_data_dir> 
 ```
 `<data_dir>` : the source (.mp4) data dir 
 
@@ -89,13 +89,13 @@ Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result
 for example, convert only `triple jump` in val split to tfrecord:  
 
 ```
- python kinetics_to_tf_record_uint8.py.py 'data/kinetics/database/val/' 'triple jump' 'data/kinetics/database/tfrecord_uint8/val/' 
+ python kinetics_to_tf_record_uint8.py 'data/kinetics/database/val/' 'triple jump' 'data/kinetics/database/tfrecord_uint8/val/' 
 ```
 
 for example, convert only all class in val split to tfrecord:  
 
 ```
- python kinetics_to_tf_record_uint8.py.py 'data/kinetics/database/val/' 'all' 'data/kinetics/database/tfrecord_uint8/val/' 
+ python kinetics_to_tf_record_uint8.py 'data/kinetics/database/val/' 'all' 'data/kinetics/database/tfrecord_uint8/val/' 
 ```
 
 Configuration section `CLASS_GEN_ATTACK` in `run_config.yml`
@@ -110,7 +110,7 @@ Patternless_Adversarial_Video$ python adversarial_main_single_class_gen.py
 - Convert the downloaded data to `.tfrecord`:
 
 ```
- python kinetics_to_tf_record_uint8.py.py 'data/kinetics/database/val/' 'all' 'data/kinetics/database/tfrecord_uint8/val/' 
+ python kinetics_to_tf_record_uint8.py 'data/kinetics/database/val/' 'all' 'data/kinetics/database/tfrecord_uint8/val/' 
 ```
 Configuration section `UNIVERSAL_ATTACK` in `run_config.yml`
 - Run `adversarial_main_universal.py`
