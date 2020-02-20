@@ -28,14 +28,15 @@ This repository contains the code to reproduce our reported results.
 
 
 2. Install the dependencies
+
    `$ pip install -r requirements.txt`
 
    And for the GPU to work, make sure you've got the drivers installed beforehand (CUDA).
 
    It has been tested to work with Python 3.5.2.
 
+
 3. Download and merge checkpoint and additional [data](https://www.dropbox.com/sh/ilbsy3bwk5k5tn4/AADxk11U_EDalu467igLfX2wa?dl=0) 
    `$ ./download_ckpt_and_data.sh`
-   
    
    
