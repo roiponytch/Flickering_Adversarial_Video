@@ -24,11 +24,11 @@ This repository contains the code to reproduce our reported results.
 
 1. Clone this repository using
  
-`$ git clone https://github.com/anonymousICML20/Patternless_Adversarial_Video.git`
+   `$ git clone https://github.com/anonymousICML20/Patternless_Adversarial_Video.git`
 
 2. To install the dependencies, run
 
-`$ pip install -r requirements.txt`
+   `$ pip install -r requirements.txt`
 
 And for the GPU to work, make sure you've got the drivers installed beforehand (CUDA).
 
