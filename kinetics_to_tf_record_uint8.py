@@ -24,8 +24,6 @@ def main(argv, arc):
     class_name = argv[2]
     tf_dst_folder = argv[3]
     
-    import pdb
-    pdb.set_trace()
     # videos_base_path = '/data/DL/Adversarial/ActivityNet/Crawler/Kinetics/database/val/'
     # class_name ='hula hooping'
     # tf_dst_folder = '/data/DL/Adversarial/ActivityNet/Crawler/Kinetics/database/tfrecord_uint8/val/'
