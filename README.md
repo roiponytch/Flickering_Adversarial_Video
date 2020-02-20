@@ -82,7 +82,7 @@ Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result
 
 `class` : class to convert
 
- `<tfrecord_data_dir>` : destination path to save `.tfrecord`s
+ `<tfrecord_data_dir>` : destination path to save `.tfrecord`'s
  
 
 for example, convert only `triple jump` in val split to tfrecord:  
