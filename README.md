@@ -22,8 +22,10 @@ This repository contains the code to reproduce our reported results.
 
 ### Setup
 
-1. Clone this repository 
+1. Clone this repository
+
    `$ git clone https://github.com/anonymousICML20/Patternless_Adversarial_Video.git`
+   
    `$ cd Patternless_Adversarial_Video`
 
 
