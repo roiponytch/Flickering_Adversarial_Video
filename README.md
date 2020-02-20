@@ -18,27 +18,57 @@ Here we attack the Inception-v1 I3D models trained on the
 This repository contains the code to reproduce our reported results.
 
 
-## Running the code
+## Setup
 
-### Setup
+This code has been tested on Ubuntu 16.04, Python 3.5.2, Tensorflow 1.15, Titan-X GPUs.
 
-1. Clone this repository
+- Clone the repository 
 
-   `$ git clone https://github.com/anonymousICML20/Patternless_Adversarial_Video.git`
+```
+git clone https://github.com/anonymousICML20/Patternless_Adversarial_Video.git
+cd Patternless_Adversarial_Video
+
+```
+
+- Install the dependencies
+```
+pip install -r requirements.txt
+```
+
+- Download and merge checkpoint and additional [data](https://www.dropbox.com/sh/ilbsy3bwk5k5tn4/AADxk11U_EDalu467igLfX2wa?dl=0) 
    
-   `$ cd Patternless_Adversarial_Video`
-
-
-2. Install the dependencies
-
-   `$ pip install -r requirements.txt`
-
-   And for the GPU to work, make sure you've got the drivers installed beforehand (CUDA).
-
-   It has been tested to work with Python 3.5.2.
-
-
-3. Download and merge checkpoint and additional [data](https://www.dropbox.com/sh/ilbsy3bwk5k5tn4/AADxk11U_EDalu467igLfX2wa?dl=0) 
-   `$ ./download_ckpt_and_data.sh`
+```
+./download_ckpt_and_data.sh
+mv data/result/ .
+```
    
-   
+## Sample code
+
+We provide 3 runnig scripts:
+
+1. Single Video Attack
+2. Single Class Generalization Attack
+3. Universal Attack
+
+The attack's running configuration can be modified by the file `run_config.yml`
+
+
+### Single Video Attack
+
+Configuration section `SINGLE_VIDEO_ATTACK` in `run_config.yml`
+- Run `adversarial_main_single_video_npy.py`
+```
+Patternless_Adversarial_Video$ python adversarial_main_single_video_npy.py
+```
+
+- Visualize the adversarial video and perturbation
+The result file (`.pkl`) will be save according to `PKL_RESULT_PATH` field in `run_config.yml`
+for example:
+```
+Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result/videos_for_tests/npy/bartending_beta1_0.1_th_1.67%_rg_1.19%.pkl.pkl
+```
+
+### Single Class Generalization Attack
+
+Download kinetics databse according to [Training Models](data/kinetics/README.md)
+
