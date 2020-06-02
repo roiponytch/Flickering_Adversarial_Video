@@ -1,5 +1,5 @@
-# Patternless-Adversarial-Attacks-on-Video-Recognition-Networks
-Code and videos accompanying the paper "Patternless Adversarial Attacks on Video Recognition Networks".
+# Flickering Adversarial Attacks against Video Recognition Networks
+Code and videos accompanying the paper "Flickering Adversarial Attacks against Video Recognition Networks".
 
 
 ## Adversarial Video Examples
