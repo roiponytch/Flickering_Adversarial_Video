@@ -4,7 +4,7 @@ Code and videos accompanying the paper "Flickering Adversarial Attacks against V
 
 ## Adversarial Video Examples
 We encourage the readers to view the adversarial videos in the following:
-<https://www.dropbox.com/sh/m0v5afg4zr6aypi/AAAEihgucPgGceKd3D9dBF7va?dl=0>
+https://bit.ly/Patternless_videos
 
 
 ## Overview
