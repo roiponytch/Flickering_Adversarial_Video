@@ -4,6 +4,8 @@ DATA:
 
 MODEL:
     CKPT_PATH: 'data/checkpoints/rgb_imagenet/model.ckpt'
+    CKPT_PATH_WITH_ZERO_PERT: 'data/checkpoints/rgb_imagenet_with_zero_pert/model_step_00000'
+    
     
 
 SINGLE_VIDEO_ATTACK:
@@ -59,7 +61,7 @@ CLASS_GEN_ATTACK:
     
 UNIVERSAL_ATTACK:
 
-    FLICKERING_ATTACK: True # False for "Sparse Adversarial Perturbations for Videos"  https://arxiv.org/pdf/1803.02536.pdf
+    FLICKERING_ATTACK: False # False for "Sparse Adversarial Perturbations for Videos"  https://arxiv.org/pdf/1803.02536.pdf
     TARGETED_ATTACK: False
     TARGETED_CLASS: 'welding'
     IMPROVE_ADV_LOSS: False 
@@ -75,7 +77,7 @@ UNIVERSAL_ATTACK:
     CYCLIC_ATTACK: False
     CYCLIC_PERTURBATION_ATTACK: True
     
-    PKL_RESULT_PATH: 'result/generalization/model_gen_untargeted_ce_loss_reg/'
+    PKL_RESULT_PATH: 'result/generalization/universal_untargeted/'
     NPY_PATH: 'data/videos_for_tests/npy/'
     
     TF_RECORDS_TRAIN_PATH: ['data/kinetics/database/tfrecord/test_all_cls/']
