@@ -26,8 +26,8 @@ This code has been tested on Ubuntu 16.04, Python 3.5.2, Tensorflow 1.15, Titan-
 - Clone the repository 
 
 ```
-git clone https://github.com/anonymousICML20/Patternless_Adversarial_Video.git
-cd Patternless_Adversarial_Video
+git clone https://github.com/anonymous-p/Flickering_Adversarial_Video
+cd Flickering_Adversarial_Video
 
 ```
 
@@ -59,7 +59,7 @@ The attack's running configuration can be modified by the file `run_config.yml`
 Configuration section `SINGLE_VIDEO_ATTACK` in `run_config.yml`
 - Run `adversarial_main_single_video_npy.py`
 ```
-Patternless_Adversarial_Video$ python adversarial_main_single_video_npy.py
+Flickering_Adversarial_Video$ python adversarial_main_single_video_npy.py
 ```
 
 - Visualize the adversarial video and perturbation
@@ -68,7 +68,7 @@ The result file (`.pkl`) will be save according to `PKL_RESULT_PATH` field in `r
 
 We provide example of `.pkl`:
 ```
-Patternless_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result/videos_for_tests/npy/bartending_beta1_0.1_th_1.67%_rg_1.19%.pkl
+Flickering_Adversarial_Video$ python utils/stats_and_plot/stats_plots.py result/videos_for_tests/npy/bartending_beta1_0.1_th_1.67%_rg_1.19%.pkl
 ```
 
 ### Single Class Generalization Attack
@@ -101,7 +101,7 @@ for example, convert only all class in val split to tfrecord:
 Configuration section `CLASS_GEN_ATTACK` in `run_config.yml`
 - Run `adversarial_main_single_class_gen.py`
 ```
-Patternless_Adversarial_Video$ python adversarial_main_single_class_gen.py
+Flickering_Adversarial_Video$ python adversarial_main_single_class_gen.py
 ```
 
 ### Universal Attack
@@ -115,5 +115,5 @@ Patternless_Adversarial_Video$ python adversarial_main_single_class_gen.py
 Configuration section `UNIVERSAL_ATTACK` in `run_config.yml`
 - Run `adversarial_main_universal.py`
 ```
-Patternless_Adversarial_Video$ python adversarial_main_universal.py
+Flickering_Adversarial_Video$ python adversarial_main_universal.py
 ```
