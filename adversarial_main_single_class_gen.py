@@ -108,15 +108,23 @@ stats = []
 res_dict={}
 
 #%%
+tf_record_list_val=[]
+tf_record_list_train=[]
+for p in ATTACK_CFG.TF_RECORDS_VAL_PATH:
+    tf_record_list_val += sorted(glob.glob(p + '/*.tfrecords'))
+        
+for p in ATTACK_CFG.TF_RECORDS_TRAIN_PATH:
+    tf_record_list_train += sorted(glob.glob(p + '/*.tfrecords'))
+        
+tf_record_list_train = tf_record_list_train[:ATTACK_CFG.NUM_OF_TRAIN_TF_RECORDS]
+tf_record_list_val =tf_record_list_val[:ATTACK_CFG.NUM_OF_VAL_TF_RECORDS]        
 
-if ATTACK_CFG.TF_RECORDS_TRAIN_PATH == ATTACK_CFG.TF_RECORDS_VAL_PATH:
-    tf_record_list = sorted(glob.glob(ATTACK_CFG.TF_RECORDS_TRAIN_PATH + '*.tfrecords'))
-    num_tfrecord_train = int(0.8*len(tf_record_list))
-    tf_record_list_train =tf_record_list[:num_tfrecord_train]
-    tf_record_list_val = tf_record_list[num_tfrecord_train:]
-else:
-    tf_record_list_train = sorted(glob.glob(ATTACK_CFG.TF_RECORDS_TRAIN_PATH + '/*.tfrecords'))
-    tf_record_list_val = sorted(glob.glob(ATTACK_CFG.TF_RECORDS_VAL_PATH + '/*.tfrecords'))
+print("tf_record_list_train:")
+print('\n'.join(map(str, tf_record_list_train))) 
+
+
+print("tf_record_list_val:")
+print('\n'.join(map(str, tf_record_list_val))) 
 
 # tf_record_list_train = [x.strip() for x in open(tf_records_list_path_train)]
 dataset_train = tf.data.TFRecordDataset(filenames=tf_record_list_train, num_parallel_reads=os.cpu_count())
@@ -356,8 +364,8 @@ while True:
         res_dict['total_steps'] = step
         res_dict['beta_1'] = _beta_1
         res_dict['beta_2'] = _beta_2
-        res_dict['fatness'] = fatness_l
-        res_dict['smoothness'] = smoothness_l
+        res_dict['fatness'] = thickness_l
+        res_dict['smoothness'] = roughness_l
         res_dict['fool_rate'] =val_miss_rate_l
 
         with open(ckpt_dst+'res.pkl', 'wb') as file:
