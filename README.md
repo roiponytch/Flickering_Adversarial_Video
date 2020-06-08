@@ -92,7 +92,7 @@ for example, convert only `triple jump` in val split to tfrecord:
  python kinetics_to_tf_record_uint8.py 'data/kinetics/database/val/' 'triple jump' 'data/kinetics/database/tfrecord_uint8/val/' 
 ```
 
-for example, convert only all class in val split to tfrecord:  
+for example, convert all class in val split to tfrecord:  
 
 ```
  python kinetics_to_tf_record_uint8.py 'data/kinetics/database/val/' 'all' 'data/kinetics/database/tfrecord_uint8/val/' 
@@ -107,13 +107,15 @@ Flickering_Adversarial_Video$ python adversarial_main_single_class_gen.py
 ### Universal Attack
 
 - Download kinetics databse according to [Kinetics-Downloader](data/kinetics/README.md)
-- Convert the downloaded data to `.tfrecord`:
+- Convert the downloaded data to `.tfrecord` s.t create tfrecord's with shuffled classes':
 
 ```
- python kinetics_to_tf_record_uint8.py 'data/kinetics/database/val/' 'all' 'data/kinetics/database/tfrecord_uint8/val/' 
+ python kinetics_to_tf_record_uint8_shuffle.py 'data/kinetics/database/test/' 'data/kinetics/database/tfrecord/test_all_cls/' 
 ```
 Configuration section `UNIVERSAL_ATTACK` in `run_config.yml`
 - Run `adversarial_main_universal.py`
 ```
 Flickering_Adversarial_Video$ python adversarial_main_universal.py
 ```
+In order to run [Sparse Adversarial Perturbations for Videos]( https://arxiv.org/pdf/1803.02536.pdf) 
+set `FLICKERING_ATTACK` to `False`
