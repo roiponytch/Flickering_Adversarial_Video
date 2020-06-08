@@ -120,7 +120,7 @@ Flickering_Adversarial_Video$ python adversarial_main_universal.py
 In order to run [Sparse Adversarial Perturbations for Videos]( https://arxiv.org/pdf/1803.02536.pdf) 
 set `FLICKERING_ATTACK` to `False`
 
-loss and metric's can be monitor with 'tensorboard', for example:
+Loss's and metric's can be monitor with 'tensorboard', for example:
 ```
 Flickering_Adversarial_Video$ tensorboard --logdir=result/generalization/universal_untargeted/
 ```
