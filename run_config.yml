@@ -61,7 +61,7 @@ CLASS_GEN_ATTACK:
     
 UNIVERSAL_ATTACK:
 
-    FLICKERING_ATTACK: False # False for "Sparse Adversarial Perturbations for Videos"  https://arxiv.org/pdf/1803.02536.pdf
+    FLICKERING_ATTACK: True # False for "Sparse Adversarial Perturbations for Videos"  https://arxiv.org/pdf/1803.02536.pdf
     TARGETED_ATTACK: False
     TARGETED_CLASS: 'welding'
     IMPROVE_ADV_LOSS: False 
