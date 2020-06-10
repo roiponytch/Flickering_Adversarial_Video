@@ -24,7 +24,7 @@ import sys
 import os
 
 # os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+# os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 
 
@@ -308,6 +308,9 @@ if not os.path.exists(model_dir):
 
 destribution = tf.distribute.MirroredStrategy(cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
                                                 #,devices=["/gpu:0", "/gpu:1"]) #(devices=["/gpu:0"])#(devices=["/gpu:0"]) #devices=["/gpu:0", "/gpu:1"]
+
+destribution = None
+
 run_config = tf.estimator.RunConfig(
                model_dir=model_dir,
                tf_random_seed=None,

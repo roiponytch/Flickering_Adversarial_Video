@@ -64,7 +64,7 @@ UNIVERSAL_ATTACK:
     FLICKERING_ATTACK: True # False for "Sparse Adversarial Perturbations for Videos"  https://arxiv.org/pdf/1803.02536.pdf
     TARGETED_ATTACK: False
     TARGETED_CLASS: 'welding'
-    IMPROVE_ADV_LOSS: False 
+    IMPROVE_ADV_LOSS: True 
     PROB_MARGIN: 0.05
     USE_LOGITS: False
     MAX_NUM_STEP: 10000
@@ -74,8 +74,8 @@ UNIVERSAL_ATTACK:
     BETA_2: 0.5
     BATCH_SIZE: 8
     
-    CYCLIC_ATTACK: False
-    CYCLIC_PERTURBATION_ATTACK: True
+    CYCLIC_ATTACK: False   # random shift of input video each itration
+    CYCLIC_PERTURBATION_ATTACK: False  # random shift of perturbation video each itration
     
     PKL_RESULT_PATH: 'result/generalization/universal_untargeted/'
     NPY_PATH: 'data/videos_for_tests/npy/'
@@ -83,7 +83,7 @@ UNIVERSAL_ATTACK:
     TF_RECORDS_TRAIN_PATH: ['data/kinetics/database/tfrecord/test_all_cls/']
     TF_RECORDS_VAL_PATH: ['data/kinetics/database/tfrecord/test_all_cls/']
 
-    NUM_OF_TRAIN_TF_RECORDS: 300 #21
+    NUM_OF_TRAIN_TF_RECORDS: 21 #21
     NUM_OF_VAL_TF_RECORDS: 40
     
     NUM_OF_VID_EACH_TF_RECORDS: 50
