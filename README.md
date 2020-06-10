@@ -8,7 +8,9 @@ https://bit.ly/Patternless_videos
 
 
 ## Overview
+<!---
 ![](bartending_beta1_0.1_th_1.67__rg_1.19.gif)
+-->
 
 Our threat model follows the white-box setting. In the experiments,
 video recognition model [I3D](https://arxiv.org/abs/1705.07750) is used as target model,
