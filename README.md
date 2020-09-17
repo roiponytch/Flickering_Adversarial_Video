@@ -12,18 +12,14 @@ https://bit.ly/Patternless_videos
 ![](bartending_beta1_0.1_th_1.67__rg_1.19.gif)
 -->
 
-Our threat model follows the white-box setting. In the experiments,
-video recognition model [I3D](https://arxiv.org/abs/1705.07750) is used as target model,
-focused on the RGB pipeline.
-Here we attack the Inception-v1 I3D models trained on the
-[Kinetics dataset](www.deepmind.com/kinetics) 
+Our threat models follows the white-box setting. In the experiments we used the [I3D](https://arxiv.org/abs/1705.07750) , [R(2+1)D, R3D and MC3][https://arxiv.org/abs/1711.11248] as target models (pre trained on the [Kinetics dataset](www.deepmind.com/kinetics) ).
 
 This repository contains the code to reproduce our reported results.
 
 
 ## Setup
 
-This code has been tested on Ubuntu 16.04, Python 3.5.2, Tensorflow 1.15, Titan-X GPUs.
+This code has been tested on Ubuntu 16.04, Python 3.7.5, Tensorflow 1.15, torch  1.4.0 and Titan-X GPUs.
 
 - Clone the repository 
 
@@ -45,7 +41,7 @@ pip install -r requirements.txt
 mv data/result/ .
 ```
    
-## Sample code
+## Sample code I3D
 
 We provide 3 runnig scripts:
 
@@ -126,3 +122,4 @@ Loss's and metric's can be monitor with 'tensorboard', for example:
 ```
 Flickering_Adversarial_Video$ tensorboard --logdir=result/generalization/universal_untargeted/
 ```
+## Sample code R(2+1)D, R3D and MC3 [Sparse Adversarial Perturbations for Videos]( https://arxiv.org/pdf/1803.02536.pdf) 
