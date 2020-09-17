@@ -57,7 +57,7 @@ The attack's running configuration can be modified by the file `run_config.yml`
 Configuration section `SINGLE_VIDEO_ATTACK` in `run_config.yml`
 - Run `adversarial_main_single_video_npy.py`
 ```
-Flickering_Adversarial_Video$ python adversarial_main_single_video_npy.py
+Flickering_Adversarial_Video$ python i3d_adversarial_main_single_video_npy.py
 ```
 
 - Visualize the adversarial video and perturbation
@@ -99,7 +99,7 @@ for example, convert all class in val split to tfrecord:
 Configuration section `CLASS_GEN_ATTACK` in `run_config.yml`
 - Run `adversarial_main_single_class_gen.py`
 ```
-Flickering_Adversarial_Video$ python adversarial_main_single_class_gen.py
+Flickering_Adversarial_Video$ python i3d_adversarial_main_single_class_gen.py
 ```
 
 ### Universal Attack
@@ -113,7 +113,7 @@ Flickering_Adversarial_Video$ python adversarial_main_single_class_gen.py
 Configuration section `UNIVERSAL_ATTACK` in `run_config.yml`
 - Run `adversarial_main_universal.py`
 ```
-Flickering_Adversarial_Video$ python adversarial_main_universal.py
+Flickering_Adversarial_Video$ python i3d_adversarial_main_universal.py
 ```
 In order to run [Sparse Adversarial Perturbations for Videos]( https://arxiv.org/pdf/1803.02536.pdf) 
 set `FLICKERING_ATTACK` to `False`
@@ -130,7 +130,7 @@ We provide 2 runnig scripts:
 
 Before using the running scripts the kinetics databse shuold be downloaded according to [Kinetics-Downloader](data/kinetics/README.md).
 
-The attack's running configuration can be modified inside the running script under 'MODEL AND TRAIN PARAMETER', allowing to set the attacked model ( R(2+1)D, R3D and MC3) and other parameters regarding the attack.
+The attack's running configuration can be modified inside the running script under 'MODEL AND TRAIN PARAMETERS', allowing to set the attacked model ( R(2+1)D, R3D and MC3) and other parameters regarding the attack.
 
 ### Single Video Attack
 
