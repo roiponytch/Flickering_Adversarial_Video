@@ -12,7 +12,7 @@ https://bit.ly/Patternless_videos
 ![](bartending_beta1_0.1_th_1.67__rg_1.19.gif)
 -->
 
-Our threat models follows the white-box setting. In the experiments we used the [I3D](https://arxiv.org/abs/1705.07750) , [R(2+1)D, R3D and MC3][https://arxiv.org/abs/1711.11248] as target models (pre trained on the [Kinetics dataset](www.deepmind.com/kinetics) ).
+Our threat models follows the white-box setting. In the experiments we used the [I3D](https://arxiv.org/abs/1705.07750) , [R(2+1)D, R3D and MC3](https://arxiv.org/abs/1711.11248) as target models (pre trained on the [Kinetics dataset](www.deepmind.com/kinetics) ).
 
 This repository contains the code to reproduce our reported results.
 
@@ -123,3 +123,24 @@ Loss's and metric's can be monitor with 'tensorboard', for example:
 Flickering_Adversarial_Video$ tensorboard --logdir=result/generalization/universal_untargeted/
 ```
 ## Sample code R(2+1)D, R3D and MC3 [Sparse Adversarial Perturbations for Videos]( https://arxiv.org/pdf/1803.02536.pdf) 
+We provide 2 runnig scripts:
+
+1. Single Video Attack
+2. Universal Attack
+
+Before using the running scripts the kinetics databse shuold be downloaded according to [Kinetics-Downloader](data/kinetics/README.md).
+
+The attack's running configuration can be modified by inside the running script under 'MODEL AND TRAIN PARAMETER' allowing chooce the attaed model ( R(2+1)D, R3D and MC3) and other parametrs regarding the attack.
+
+### Single Video Attack
+
+- Run `r2plus1d_main_statistics_single_video_attack.py`
+```
+Flickering_Adversarial_Video$ python r2plus1d_main_statistics_single_video_attack.py
+```
+### Universal Attack
+
+- Run `r2plus1d_main_universal_attack.py`
+```
+Flickering_Adversarial_Video$ python r2plus1d_main_universal_attack.py
+```
