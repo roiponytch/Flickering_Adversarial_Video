@@ -130,7 +130,7 @@ We provide 2 runnig scripts:
 
 Before using the running scripts the kinetics databse shuold be downloaded according to [Kinetics-Downloader](data/kinetics/README.md).
 
-The attack's running configuration can be modified inside the running script under 'MODEL AND TRAIN PARAMETER', allowing to set the attacked model ( R(2+1)D, R3D and MC3) and other parameters regarding the attack.
+The attack's running configuration can be modified inside the running script under 'MODEL AND TRAIN PARAMETERS', allowing to set the attacked model ( R(2+1)D, R3D and MC3) and other parameters regarding the attack.
 
 ### Single Video Attack
 
