@@ -151,7 +151,7 @@ BATCH_SIZE = BATCH_SIZE_ARRAY[len(DEVICES_IDS)]
 
 ##
 
-kinetics_dataset_path = '/data/DL/Adversarial/ActivityNet/Crawler/Kinetics/database/val/'
+kinetics_dataset_path = ''
 data = VideoDataset(kinetics_dataset_path,
                     seed= None,
                     train_pct= 0.75,
@@ -182,7 +182,7 @@ learner= VideoLearnerAdversarial(data,
 
 ##
 
-DEST_FOLDER=computervision_recipes_path+'results/{}/generalization/universal/val_test/all_cls_shuffle_{}/t_{}_v_{}_linf_{}_lambda_{}_beta1_{}_/'.format(
+DEST_FOLDER=computervision_recipes_path+'/results/{}/generalization/universal/val_test/all_cls_shuffle_{}/t_{}_v_{}_linf_{}_lambda_{}_beta1_{}_/'.format(
                       learner.model_name,
                       ATTACK_TYPE,
                       NUM_OF_SAMPLES_TRAIN,

@@ -67,6 +67,7 @@ KINETICS_DB_PATH='/data/DL/Adversarial/ActivityNet/Crawler/Kinetics/database/'
 ##########MODEL AND TRAIN PARAMETER#####################
 
 computervision_recipes_path=os.getcwd()
+print(computervision_recipes_path)
 
 kinetics_train_dataset_path = KINETICS_DB_PATH+'/train/'
 kinetics_val_dataset_path = KINETICS_DB_PATH+'/val/'
@@ -143,7 +144,7 @@ else:
     print("Unknown base model")
     assert False
 
-DEST_FOLDER= 'results/single_video_attack/train/all_cls_shuffle_{}/lambda_{}_beta1_{}_/'.format(
+DEST_FOLDER= computervision_recipes_path +'/results/single_video_attack/train/all_cls_shuffle_{}/lambda_{}_beta1_{}_/'.format(
                                                                                                     ATTACK_TYPE,
                                                                                                   LAMBDA,
                                                                                                   BETA_1)
