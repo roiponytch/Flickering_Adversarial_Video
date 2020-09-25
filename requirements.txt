@@ -9,7 +9,7 @@ setGPU==0.0.7
 sk-video==1.1.10
 tensorboard==1.15.0
 tensorflow-estimator==1.15.1
-tensorflow-gpu==1.15.2
+tensorflow-gpu==1.15.4
 tensorflow-probability==0.7.0
 dm-sonnet==1.23
 joblib==0.16.0
