@@ -1,10 +1,12 @@
-# Flickering Adversarial Attacks against Video Recognition Networks
-Code and videos accompanying the paper "Flickering Adversarial Attacks against Video Recognition Networks".
+# Over-the-Air Adversarial Flickering Attacks against Video Recognition Networks
+Code and videos accompanying the paper "Over-the-Air Adversarial Flickering Attacks against Video Recognition Networks".
 
 
 ## Adversarial Video Examples
 We encourage the readers to view the adversarial videos in the following:
-https://bit.ly/Patternless_videos
+https://bit.ly/Flickering_Attack_videos
+https://bit.ly/Over_the_Air_videos
+https://bit.ly/Over_the_Air_scene_based_videos
 
 
 ## Overview
