@@ -105,7 +105,7 @@ isort==4.3.21
 itsdangerous==1.1.0
 jedi==0.17.1
 jeepney==0.4.3
-Jinja2==2.11.2
+Jinja2==2.11.3
 jmespath==0.10.0
 jsonpickle==1.4.1
 jsonschema==3.2.0
