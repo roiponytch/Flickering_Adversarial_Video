@@ -158,7 +158,7 @@ pycodestyle==2.6.0
 pycparser==2.20
 pydocstyle==5.0.2
 pyflakes==2.2.0
-Pygments==2.6.1
+Pygments==2.7.4
 PyJWT==1.7.1
 pylint==2.5.3
 pyOpenSSL==19.1.0
