@@ -52,7 +52,7 @@ azureml-train-automl-client==1.11.0.post1
 azureml-train-core==1.11.0
 azureml-train-restclients-hyperdrive==1.11.0
 azureml-widgets==1.11.0
-Babel==2.8.0
+Babel==2.9.1
 backcall==0.2.0
 backports.tempfile==1.0
 backports.weakref==1.0.post1
