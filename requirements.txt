@@ -2,7 +2,7 @@ easydict==1.9
 ffmpeg==1.4
 gpustat==0.6.0
 imageio==2.6.1
-ipython==7.17.0
+ipython==7.31.1
 ipython-genutils==0.2.0
 matplotlib==3.3.1
 setGPU==0.0.7
