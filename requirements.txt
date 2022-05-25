@@ -159,7 +159,7 @@ pycparser==2.20
 pydocstyle==5.0.2
 pyflakes==2.2.0
 Pygments==2.6.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.5.3
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
