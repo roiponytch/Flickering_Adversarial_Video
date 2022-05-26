@@ -222,7 +222,7 @@ traitlets==4.3.3
 traittypes==0.2.1
 typed-ast==1.4.1
 typing==3.7.4.3
-ujson==1.35
+ujson==5.2.0
 urllib3==1.25.10
 w3lib==1.22.0
 wasabi==0.7.1
