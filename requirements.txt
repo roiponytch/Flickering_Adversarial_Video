@@ -12,7 +12,7 @@ tensorflow-estimator==1.15.1
 tensorflow-gpu==1.15.2
 tensorflow-probability==0.7.0
 dm-sonnet==1.23
-joblib==0.16.0
+joblib==1.2.0
 pandas
 opencv-python
 adal==1.2.4
